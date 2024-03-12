@@ -1,0 +1,142 @@
+/* public/css/style.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: white;
+    color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 200px; /* Réduisez la valeur selon vos besoins */
+    height: auto;
+    margin-right: 20px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button2 {
+    color:#fff;
+    background:#000000;
+    padding:12px 25px;
+    cursor:pointer;
+    user-select:none;
+    border-radius:40px;
+    margin:0px 5px;
+    text-decoration: none; /* Pour que la hauteur de la ligne de l'image soit normale */
+}
+.button {
+    color: black;
+    display: flex;
+    background:#f9f9f9;
+    padding:12px 25px;
+    cursor:pointer;
+    user-select:none;
+    border-radius:40px;
+    margin:0px 5px;
+    text-decoration: none; /* Pour que la hauteur de la ligne de l'image soit normale */
+}
+
+/* Modifiez ces styles dans votre fichier style.css */
+
+.ideaexp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button3 {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    background: #f9f9f9;
+    padding: 12px 25px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 40px;
+    margin: 0px 5px;
+}
+
+/* Nouveau style pour le bouton "Créer" */
+/* .button3.create {
+    Ajoutez des styles supplémentaires si nécessaire */
+/* } */
+
+
+.intro-text {
+    text-align: center;
+    margin: 20px; /* Vous pouvez ajuster la marge selon vos besoins */
+}
+
+.center-text {
+    font-weight: bold;
+    font-size: 30px; 
+    color: #333; 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Modifiez ces styles dans votre fichier style.css */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajustez l'alignement horizontal sur les côtés */
+    width: 100%; /* Pour occuper toute la largeur du header */
+}
+
+/* Modifiez ces styles dans votre fichier style.css */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alignez la div à droite du header */
+    width: 100%; /* Pour occuper toute la largeur du header */
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.initial-bubble {
+    display: inline-block;
+    width: 30px; /* Ajustez la largeur de la bulle selon vos besoins */
+    height: 30px; /* Ajustez la hauteur de la bulle selon vos besoins */
+    background-color: #333; /* Couleur de fond de la bulle */
+    color: #fff; /* Couleur du texte dans la bulle */
+    border-radius: 50%; /* Pour créer une forme de bulle circulaire */
+    text-align: center;
+    line-height: 30px; /* Centrer le texte verticalement dans la bulle */
+    margin-right: 10px; /* Ajustez la marge entre la bulle et le texte selon vos besoins */
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+    color: #333; /* Couleur du texte de l'icône */
+}
+
+.logout-button:hover {
+    color: #555; /* Couleur du texte de l'icône au survol */
+}

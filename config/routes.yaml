@@ -1,0 +1,18 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+# routes.yaml
+app_pins:
+    path: '/pins'
+    controller: App\Controller\PinsController::index
+
+    
+ideas:
+    path: /ideas
+    controller: App\Controller\IdeaController::index
+
+
+idea_create:
+    path: /idea/create
+    controller: App\Controller\IdeaController::create

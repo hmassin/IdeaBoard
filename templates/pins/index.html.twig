@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div class="ideaexp">
+            <img src="{{ asset('images/ideaboard.png') }}" alt="Logo">
+            <a href="#" class="button3">Explorer</a>
+            <a href="{{ path('idea_create') }}" class="button3">Créer</a> <!-- Ajoutez ce bouton -->
+        </div>
+
+        {% if user %}
+        <div class="user-info">
+            <p><span class="initial-bubble">{{ user.email|first }}</span></p>
+            <a href="{{ path('app_logout') }}" class="logout-button"><i class="fas fa-power-off"></i></a>
+        </div>
+
+        {% else %}
+            {# Ajoutez vos boutons de connexion et d'inscription ou tout autre contenu pour les utilisateurs non authentifiés #}
+        {% endif %}
+    </header>
+
+    <div class="intro-text">
+        <p class="center-text">Découvrez les sujets les plus enchanteurs sur IdeaBoard.</p>
+    </div>
+{% endblock %}
